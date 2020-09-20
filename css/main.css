@@ -5,10 +5,16 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif;
   height: 100vh;
+  background: rgb(235, 235, 235);
 }
 main {
   margin: 0;
   padding: 0;
+}
+h1,
+p,
+h3 {
+  margin-top: 0;
 }
 img {
   width: 100%;
@@ -16,7 +22,9 @@ img {
 p {
   font-family: sans-serif;
 }
-
+a {
+  color: rgb(70, 57, 110);
+}
 /* Mobile View Navigation */
 .nav {
   display: none;
@@ -92,17 +100,108 @@ header {
 
 /* Posts Css */
 
-.post {
-  background: thistle;
+.post,
+.page-nav {
+  background: whitesmoke;
   padding: 2em 0 2em 0;
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.5em 0 2em 0;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  -webkit-box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
 }
 .post:nth-of-type(1) {
   margin-top: 0;
 }
-post img {
-  width: 100%;
-  height: 10%;
+.post-top,
+.article,
+.post-bottom {
+  width: 80%;
+  margin: 0 auto;
 }
+.post-top {
+  letter-spacing: 0.2em;
+  margin-top: 3em;
+  line-height: 1.8em;
+}
+.article {
+  margin-top: 2em;
+  font-size: 1rem;
+  line-height: 1.4em;
+  text-align: left;
+}
+.post-bottom {
+  margin-top: 2em;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+.continue {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em 0;
+  border: 1px black solid;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+.page-nav {
+  width: 80%;
+  margin: 0 auto;
+  background: none;
+}
+.page-nav a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em 0;
+  border: 1px black solid;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+/* fEATURED SECTION CSS */
+
+.featured-article {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.info h3 {
+  margin-bottom: 0;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials img {
+  width: 5%;
+  padding-right: 0.6em;
+}
+.featured img {
+  clip-path: inset(10% 0% 10% 0%);
+}
+.featured img:nth-of-type(1) {
+  clip-path: inset(15% 0% 10% 0%);
+}
+.testimonials {
+  font-size: 0.65em;
+  letter-spacing: 0.2em;
+  padding-left: 0.6em;
+}
+.featured {
+  margin-bottom: 1.2rem;
+  -webkit-box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 11px 62px -38px rgba(0, 0, 0, 0.75);
+}
+
+/* fEATURED SECTION CSS END */
